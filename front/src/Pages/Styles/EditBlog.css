@@ -1,0 +1,199 @@
+.edit-blog-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  .editor-column {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .editor-column h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .editor-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .version-button, .publish-button {
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .version-button {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    color: #666;
+  }
+  
+  .version-button:hover {
+    background: #e0e0e0;
+  }
+  
+  .publish-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+  }
+  
+  .publish-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+  }
+  
+  .title-input {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .title-input:focus {
+    outline: none;
+    border-bottom: 2px solid #6a11cb;
+  }
+  
+  .image-upload-label {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: #f8f8f8;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .image-upload-label:hover {
+    border-color: #6a11cb;
+  }
+  
+  .image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+  }
+  
+  .image-placeholder span {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #image-upload {
+    display: none;
+  }
+  
+  .content-textarea {
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    resize: vertical;
+  }
+  
+  .content-textarea:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+  }
+  
+  .versions-column {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-height: 800px;
+    overflow-y: auto;
+  }
+  
+  .versions-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .versions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .version-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .version-card:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+  }
+  
+  .version-card.active {
+    border-left-color: #6a11cb;
+    background: #f5f0ff;
+  }
+  
+  .version-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .version-id {
+    font-weight: 600;
+    color: #6a11cb;
+  }
+  
+  .version-date {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .version-author {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .version-summary {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  

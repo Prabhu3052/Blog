@@ -1,0 +1,96 @@
+.blog-card {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .blog-card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-front {
+    background: white;
+  }
+  
+  .card-front img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .card-content h3 {
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .excerpt {
+    color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .card-back {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .back-content {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .author {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .date {
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+  
+  .read-more {
+    background: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #6a11cb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }

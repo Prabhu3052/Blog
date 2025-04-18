@@ -1,0 +1,186 @@
+/* Profile.css */
+
+.profile-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .profile-header {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-avatar {
+    position: relative;
+  }
+  
+  .avatar-image {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f0f0f0;
+  }
+  
+  .avatar-edit-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .avatar-edit-button i {
+    font-size: 14px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .profile-info p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .profile-input,
+  .profile-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .profile-textarea {
+    resize: vertical;
+  }
+  
+  .social-inputs .input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group i {
+    color: #666;
+    font-size: 1.1rem;
+    width: 24px;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .cancel-button,
+  .save-button,
+  .edit-profile-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-button {
+    background-color: #e0e0e0;
+  }
+  
+  .save-button {
+    background-color: #0077ff;
+    color: white;
+  }
+  
+  .edit-profile-button {
+    margin-top: 1rem;
+    background-color: #0077ff;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d2d2d2;
+  }
+  
+  .save-button:hover,
+  .edit-profile-button:hover {
+    background-color: #005fcc;
+  }
+  
+  .social-links a {
+    margin-right: 12px;
+    font-size: 1.3rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0077ff;
+  }
+  
+  .profile-tabs {
+    display: flex;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-tabs button {
+    padding: 10px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #777;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+  }
+  
+  .profile-tabs button.active {
+    color: #0077ff;
+    border-bottom: 3px solid #0077ff;
+  }
+  
+  .profile-content .blog-list {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .liked-placeholder {
+    text-align: center;
+    color: #999;
+    font-size: 1.1rem;
+    padding: 2rem;
+  }
+  
+  .profile-loading {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
