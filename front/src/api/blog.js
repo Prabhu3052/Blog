@@ -1,6 +1,7 @@
 import { createAxiosInstance } from './utils';
+import { API_ENDPOINTS } from '../config/api';
 
-const API_URL = 'http://localhost:5000/api/blogs';
+const API_URL = API_ENDPOINTS.BLOGS;
 
 const getAllBlogs = async () => {
   const instance = createAxiosInstance(API_URL);

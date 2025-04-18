@@ -1,6 +1,7 @@
 import { createAxiosInstance } from './utils';
+import { API_ENDPOINTS } from '../config/api';
 
-const API_URL = 'http://localhost:5000/api/users';
+const API_URL = API_ENDPOINTS.USERS;
 
 const getProfile = async () => {
   const instance = createAxiosInstance(API_URL);
