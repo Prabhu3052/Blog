@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const multer = require('multer');
-const { registerUser, authUser } = require('../controllers/authcontroller');
+const { registerUser, authUser } = require(path.join(__dirname, '..', 'controllers', 'authController'));
 
 const router = express.Router();
 
